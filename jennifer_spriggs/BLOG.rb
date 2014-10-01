@@ -127,7 +127,7 @@ while ask_for_posts == true
 
   # Next, let's use `gets.strip` and store the contents in the title attribute
   # of the newly instantiated `post` object that you created above.
-  @title = gets.strip 
+  post.title = gets.strip 
 
 
   # The below line simply displays on the screen a request for the user to
@@ -136,7 +136,7 @@ while ask_for_posts == true
 
   # Next, let's use `gets.strip` and store the contents in the body attribute
   # of the newly instantiated `post` object that you created above.
-  @body = gets.strip
+  post.body = gets.strip
 
   # Lastly, before we finalize this post, let's be sure to populate the
   # `author` attribute of the newly instantiated `post` object that you created
@@ -144,7 +144,7 @@ while ask_for_posts == true
   # welcome message of the application, we already know who the user is. Let's
   # store the _entire_ author variable inside of the author attribute of Post.
 
-  @author = Author.new 
+  post.author = author
 
   # This line will add the current `post` to the `posts` array. There should be
   # no need to edit this line.
