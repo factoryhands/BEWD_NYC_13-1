@@ -1,0 +1,13 @@
+<h1>CHIC, SWEAR, SHOVE</h1>
+
+<% @posts.each do |post| %>
+  <h1><%= post[:title] %></h1>
+  <p><%= post[:body] %></p>
+
+<% end %>
+
+<hr>
+
+<%= link_to 'Home', root_path %>
+
+<%= image_tag 'DOLFIN.gif' %>
